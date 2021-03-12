@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo_Id</title>
+</head>
+<body>
+    <p id="colores">
+        Ejemplo de Texto generico getElementById utilizando funciones.
+    </p>
+    <button onclick="changeColor('blue')">Color Azul</button>
+    <button onclick="changeColor('red')">Color Rojo</button>
+    <button onclick="changeColor('yellow')">Color Amarillo</button>
+    <button onclick="changeColor('green')">Color Verde</button>
+    <button onclick="changeColor('pink')">Color Rosa</button>
+    <script>
+        function changeColor(newColor){
+            var elem = document.getElementById('colores');
+            elem.style.color = newColor;
+        }
+    </script>
+</body>
+</html>
