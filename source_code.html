@@ -1,0 +1,37 @@
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="createdByDuarte">
+    <title>Practica getelement</title>
+</head>
+
+<body>
+    <p>Universidad Tecnológica de Durango</p>
+    <p>Nombre del alumno: Grecia Antonella Duarte Vázquez</p>
+    <span>Carrera: Tecnologias de la Información</span>
+    <br>
+    <span>Moldelo DOM</span>
+    <p id="parrafo">Tecnológias de la Información</p>
+    <script>
+    	let parrafos = document.getElementsByTagName('p');
+    	console.log(parrafos.length)
+    </script>
+    <script>
+    	var acceder_parrafo = document.getElementById('parrafo');
+    	acceder_parrafo.innerHTML = "Desarrollo de Negocios";
+    </script>
+
+<script>
+        console.debug("Este es un mensaje del debug");
+        console.warn("Este es un mensaje de aviso");
+        console.error("Este es un mensaje de error");
+        console.info("Este es un mensaje de Informacion");
+    </script>
+</body>
+
+</html>
